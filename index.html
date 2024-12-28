@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="IMG/Screenshot 2024-12-28 150224.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="JS/Main.js"></script>
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="container">
+            <div class="info">
+                <div class="wrap">
+                    <img src="" id="LocImg">
+                    <h1 id="Location"></h1>
+                    <p id="p1"></p>
+                    <br>
+                    <p id="p2"></p>
+                    <button onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="NavBar">
+        <div class="logo" id="Hide">
+            <div class="text">
+                <h3>Archived</h3>
+                <h2>Odyssey</h2>
+            </div>
+            <div class="textr">
+                <p>See the settings</p>
+                <p>of myths and</p>
+                <p>history</p>
+            </div>
+        </div>
+        <nav class="HeadNav">
+            <a href="#Main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section id="Main">
+        <div class="contentMain">
+            <h1>Archived</h1>
+            <h1>Odyssey</h1>
+            <a href="#Areas">See the settings of myths and history</a>
+        </div>
+    </section>
+    <section id="Areas" class="break">
+        <h1>Featured Locations</h1>
+        <div class="Locations">
+            <div class="LocCon">
+                <figure class="LocItem">
+                    <img src="IMG/Egypt.jpg" alt="Valley of Kings" class="LocImg">
+                    <figcaption>Valley of the Kings, Egypt</figcaption>
+                    <div class="overlay">
+                        <div class="Desc">
+                            <p>The Valley of the Kings is an ancient burial site located on the west bank of the Nile River in Egypt, where pharaohs and noble families of the New Kingdom (c. 1550-1070 BCE) were entombed. It is renowned for its richly decorated tombs, including that of Tutankhamun, and its archaeological significance in understanding ancient Egyptian culture and beliefs about the afterlife.</p>
+                            <button onclick="openPopup(0)">Read More</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="LocItem">
+                    <img src="IMG/OdyPalace.jpg" alt="Ithaca" class="LocImg">
+                    <figcaption>Odysseus' Palace at Ithaca, Greece</figcaption>
+                    <div class="overlay">
+                        <div class="Desc">
+                            <p>The real-life palace of Odysseus is believed to be located on the Greek island of Ithaca, specifically at a site called "Neraki," near the village of Vathy. Archaeological excavations have uncovered remnants of a Mycenaean palace, including walls, pottery, and other structures, which many scholars associate with the legendary king of Ithaca, reflecting the grandeur and historical context of Homer’s epic tale.</p>
+                            <button onclick="openPopup(1)">Read More</button>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="LocCon">
+                <figure class="LocItem">
+                    <img src="IMG/stonehenge.jpg" alt="Stonehenge" class="LocImg">
+                    <figcaption>Stonehenge, England</figcaption>
+                    <div class="overlay">
+                        <div class="Desc">
+                            <p>Stonehenge is a prehistoric monument located in Wiltshire, England, consisting of a circle of massive standing stones, some weighing up to 40 tons, arranged in a unique formation. Believed to have been constructed between 3000 and 2000 BCE, it is thought to have had ceremonial, astronomical, and religious significance, though its exact purpose remains a mystery.</p>
+                            <button onclick="openPopup(2)">Read More</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="LocItem">
+                    <img src="IMG/Minoan.jpg" alt="Knossos" class="LocImg">
+                    <figcaption>Knossos, Greece</figcaption>
+                    <div class="overlay">
+                        <div class="Desc">
+                            <p>Knossos is the largest and most significant archaeological site of the Minoan civilization, located on the island of Crete, Greece. This ancient palace complex, dating back to around 1900 BCE, is renowned for its advanced architecture, colorful frescoes, and complex layout, which include elaborate storage rooms, courtyards, and intricate plumbing systems.</p>
+                            <button onclick="openPopup(3)">Read More</button>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="LocCon">
+                <figure class="LocItem">
+                    <img src="IMG/Fuji.jpg" alt="Mount Fuji" class="LocImg">
+                    <figcaption>Mount Fuji, Japan</figcaption>
+                    <div class="overlay">
+                        <div class="Desc">
+                            <p>Mount Fuji is Japan's highest and most iconic peak, standing at 3,776 meters (12,389 feet), and is an active stratovolcano located on Honshu Island. It holds great cultural and spiritual significance in Japanese mythology, often depicted as a sacred site and the home of the goddess Konohanasakuya-hime, symbolizing beauty, strength, and endurance.</p>
+                            <button onclick="openPopup(4)">Read More</button>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="LocItem">
+                    <img src="IMG/Troy.jpg" alt="Troy" class="LocImg">
+                    <figcaption>Ruins of Troy, Turkey</figcaption>
+                    <div class="overlay">
+                        <div class="Desc">
+                            <p>The ruins of Troy, located in modern-day Turkey at Hisarlik, are the remains of an ancient city once thought to be purely legendary, but now confirmed through archaeology. Excavations have uncovered multiple layers of settlements, with walls, gates, and artifacts that correspond to the famous Trojan War described in Homer's *Iliad*, offering insights into both myth and historical reality.</p>
+                            <button onclick="openPopup(5)">Read More</button>
+                        </div>
+                    </div>
+                </figure>   
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank">𝕏</a>
+        </div>
+        <p>© 2024 Archived Odyssey</p>
+    </footer>
+</body>
+</html>

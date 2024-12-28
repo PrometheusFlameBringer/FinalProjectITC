@@ -1,0 +1,167 @@
+body{
+    background-image: url(../IMG/Egypt.jpg);
+}
+
+/*Main*/
+#Main{
+    position: relative;
+}
+.contentMain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: fit-content;
+    color: white;
+    background: #E7D1B5f1;
+    padding: 3vh 3vw;
+}
+.contentMain h1{
+    margin: 0;
+    font-size: 10em;
+}
+.contentMain a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 1vh 1vw;
+}
+.contentMain a:hover{
+    color: wheat;
+    background: white;
+}
+
+/*Locations*/
+#Areas{
+    background: #E7D1B5;
+    padding: 0;
+    text-align: center;
+}
+#Areas h1{
+    margin-top: 5vh;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+.Locations{
+    padding: 8%;
+    padding-top: 0;
+    padding-bottom: 5vh;
+    min-height: 0;
+    min-width: 0;
+}
+.LocCon{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(1px,1fr));
+}
+.LocItem{
+    overflow: hidden;
+    width: 70vh;
+    text-align: center;
+    margin: 1em auto;
+    border-radius: 5px;
+    height: 45vh;
+    transition: all 300ms;
+    position: relative;
+}
+.LocItem img{
+    width: 90%;
+    height: 35vh;
+    margin-top: 3vh;
+    border-radius: 15px;
+}
+.LocItem figcaption{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+}
+.LocItem:hover{
+    box-shadow: 0 .25em .5em 0, 0 .3em .6em;
+}
+
+/*overlay*/
+.overlay{
+    transition: all 300ms;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    text-align: center;
+    width: 90.5%;
+    height: 35vh;
+    margin-top: 3vh;
+    background: #cea984f1;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.LocItem:hover .overlay{
+    opacity: 1;
+}
+.overlay p{
+    margin-left: 10%;
+    width: 80%;
+}
+.overlay button{
+    border: none;
+    background-color: #edc9af;
+    padding: 2% 3%;
+}
+
+/*popup*/
+.popup{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background: #000000cf;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+}
+.container{
+    position: absolute;
+    height: 80vh;
+    width: 80vw;
+    background: #ba9368;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 72vh;
+    width: 76vw;
+    background: #E7D1B5;
+    text-align: center;
+}
+.wrap{
+    position: absolute;
+    height: 70vh;
+    margin: 1vh 1vw;
+    overflow: auto;
+}
+.wrap img{
+    margin: 2vh 2vw;
+    width: 70vw;
+    height: 66vh;
+    margin-bottom: 1vh;
+}
+.wrap p{
+    margin: 0;
+    text-align: center;
+}
+.wrap button{
+    margin-top: 2vh;
+    border: none;
+    background-color: #edc9af;
+    padding: 1% 3%;
+}
